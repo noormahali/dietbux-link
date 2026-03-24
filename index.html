@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    var android = "https://play.google.com/store/apps/details?id=cocopalms.dietbux.app";
+    var ios = "https://apps.apple.com/kw/app/dietbux-%D8%AF%D8%A7%D9%8A%D8%AA-%D8%A8%D9%88%D9%83%D8%B3/id1549873307";
+
+    if (/android/i.test(userAgent)) {
+      window.location.href = android;
+    } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+      window.location.href = ios;
+    } else {
+      window.location.href = ios;
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
